@@ -1,10 +1,11 @@
+import { STYLES } from "./styles/theme";
 function Experience() {
     return (
-       <section>
+       <section className={STYLES.card}>
 
-            <h2>Досвід програмування</h2>
-            <p>
-                <b>Python</b> вивчав ще зі школи та протягом семeстру в університеті, а 
+            <h2 className={STYLES.title}>Досвід програмування</h2>
+            <p className="text-stone-700">
+                <span className="font-bold text-[#8c532b]">Python</span> вивчав ще зі школи та протягом семeстру в університеті, а 
                 також самостійно на сайті codewars. <br/> Написав програми для шифрування тексту, роботи 
                 з лог-файлами, скрипти, працював з бібліотеками numpy. <br/> Продовжую вивчати Python самостійно 
                 та в рамках дисципліни "Програмування скриптовими мовами".
@@ -12,7 +13,13 @@ function Experience() {
                 <b>C#</b> — вивчав протягом 2 семестру, освоїв синтаксис та написав декілька простеньких програм з принципами ооп.
                 <br/><br/>
                 Вивчаю <b>Rust</b>. <br/>
-                Брав участь у хакатоні: <a href="https://github.com/erorr-404/Larp-Team-BEST-HACKath0n" target="_blank" title="Git-репозиторій">Git</a>
+                Брав участь у хакатоні: 
+                <a 
+                href="https://github.com/erorr-404/Larp-Team-BEST-HACKath0n" 
+                target="_blank" 
+                title="Git-репозиторій"
+                className={STYLES.link}
+                >Git</a>
             </p>
 
         </section>
